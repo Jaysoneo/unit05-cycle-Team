@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using unit05_cycle.Game.Casting;
-using unit05_cycle.Game.Services;
+using unit05_cycle_Team.Game.Casting;
+using unit05_cycle_Team.Game.Services;
 
 
-namespace unit05_cycle.Game.Scripting
+namespace unit05_cycle_Team.Game.Scripting
 {
     /// <summary>
     /// <para>An update action that handles interactions between the actors.</para>
@@ -36,7 +36,6 @@ namespace unit05_cycle.Game.Scripting
             HandleGameOver(cast);
             
         }
-
 
         /// <summary>
         /// Sets the game over flag if the snake collides with one of its segments.
