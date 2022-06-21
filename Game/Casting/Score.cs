@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 
-namespace unit05_cycle.Game.Casting
+namespace unit05_cycle_Team.Game.Casting
 {
     /// <summary>
     /// <para>Keeps track of how long the game has run</para>

@@ -1,10 +1,17 @@
-﻿using unit05_cycle.Game.Casting;
-using unit05_cycle.Game.Directing;
-using unit05_cycle.Game.Scripting;
-using unit05_cycle.Game.Services;
+﻿using unit05_cycle_Team.Game.Casting;
+using unit05_cycle_Team.Game.Directing;
+using unit05_cycle_Team.Game.Scripting;
+using unit05_cycle_Team.Game.Services;
 
+<<<<<<< HEAD
 
 namespace unit05_cycle
+=======
+//test comment 
+//Test comment 2
+//test comment 3
+namespace unit05_cycle_Team
+>>>>>>> 22dc0167e6e859aea803e94dd9ae8673c7d6d446
 {
     /// <summary>
     /// The program's entry point.
