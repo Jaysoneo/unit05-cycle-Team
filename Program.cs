@@ -3,9 +3,7 @@ using unit05_cycle.Game.Directing;
 using unit05_cycle.Game.Scripting;
 using unit05_cycle.Game.Services;
 
-//test comment 
-//Test comment 2
-//test comment 3
+
 namespace unit05_cycle
 {
     /// <summary>

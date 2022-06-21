@@ -29,6 +29,7 @@ namespace unit05_cycle.Game.Services
             keys["j"] = KeyboardKey.KEY_J;
             keys["k"] = KeyboardKey.KEY_K;
             keys["l"] = KeyboardKey.KEY_L;
+            keys["\n"] = KeyboardKey.KEY_ENTER;
         }
 
         /// <summary>
