@@ -29,7 +29,7 @@ namespace unit05_cycle_Team.Game.Scripting
             List<Actor> all_snakes = cast.GetActors("snake");
             Actor time = cast.GetFirstActor("time");
 
-            if (keyboardService.IsKeyDown("KEY_ENTER"))
+            if (keyboardService.IsKeyDown("\n"))
             {
                 Console.WriteLine("Enter key pressed");
                 foreach (Snake snake in all_snakes)
