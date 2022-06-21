@@ -90,8 +90,6 @@ namespace unit05_cycle_Team.Game.Scripting
                 Snake snake2 = (Snake)cast.GetSecondActor("snake");
                 List<Actor> segments2 = snake2.GetSegments();
                 
-
-                
                 if (!OneIsAlive)
                 {
                     // create a "game over" message

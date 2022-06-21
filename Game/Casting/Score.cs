@@ -28,8 +28,6 @@ namespace unit05_cycle_Team.Game.Casting
         /// <param name="points">The points to add.</param>
         public void AddTime(Cast cast)
         {
-            Snake snake = (Snake)cast.GetFirstActor("snake");
-            List<Actor> body = snake.GetBody(); 
             time++;
             SetText($"Time: {this.time}");
         }
