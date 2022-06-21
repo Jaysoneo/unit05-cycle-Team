@@ -28,6 +28,7 @@ namespace unit05_cycle_Team
             // create the services
             KeyboardService keyboardService= new KeyboardService();
             VideoService videoService = new VideoService(false);
+            RestartGame startGame = new RestartGame(keyboardService);
            
             // create the script
             Script script = new Script();
@@ -38,7 +39,11 @@ namespace unit05_cycle_Team
 
             // start the game
             Director director = new Director(videoService);
-            director.StartGame(cast, script);
+            if (startGame.start)
+            {
+                director.StartGame(cast, script);
+            }
+            
         }
     }
 }

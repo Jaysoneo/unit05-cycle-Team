@@ -1,4 +1,5 @@
 // This class could start the game by hitting enter, then restart the game by hitting enter again.
+using System.Collections.Generic;
 using unit05_cycle_Team.Game.Casting;
 using unit05_cycle_Team.Game.Services;
 
@@ -15,13 +16,33 @@ namespace unit05_cycle_Team.Game.Scripting
 
     public class RestartGame : Action
     {
-        private bool start = false;
-        public RestartGame() {}
+        private KeyboardService keyboardService;
+        public bool start = false;
+        public RestartGame(KeyboardService keyboardService) 
+        {
+            this.keyboardService = keyboardService;
+        }
 
         public void Execute(Cast cast, Script script) 
         {
+            List<Actor> all_snakes = cast.GetActors("snake");
+            Actor time = cast.GetFirstActor("time");
+
             while (start == false) 
             {
+                if (keyboardService.IsKeyDown("KEY_ENTER")) {start = true;}
+            }
+            while (start)
+            {
+                if (keyboardService.IsKeyDown("KEY_ENTER"))
+                {
+                    foreach (Snake snake in all_snakes)
+                    {
+                        cast.RemoveActor("snake", snake);
+                    }
+                    cast.RemoveActor("time", time);
+                    
+                }
 
             }
         }
