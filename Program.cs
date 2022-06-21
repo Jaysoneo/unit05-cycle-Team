@@ -5,7 +5,7 @@ using unit05_cycle_Team.Game.Services;
 
 <<<<<<< HEAD
 
-namespace unit05_cycle
+namespace unit05_cycle_Team
 =======
 //test comment 
 //Test comment 2
