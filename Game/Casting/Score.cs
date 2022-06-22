@@ -45,5 +45,6 @@ namespace unit05_cycle_Team.Game.Casting
         {
             return time;
         }
+
     }
 }

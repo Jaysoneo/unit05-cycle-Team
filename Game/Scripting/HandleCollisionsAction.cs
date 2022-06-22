@@ -106,6 +106,7 @@ namespace unit05_cycle_Team.Game.Scripting
                     message1.SetText($"Player 1 Died at {death_time1}");
                     message1.SetPosition(position1);
                     cast.AddActor("messages", message1);
+                    score1.SetText($"Score Player 1: {death_time1}");
 
                     // make everything white
                     foreach (Actor segment in segments1)
@@ -123,6 +124,7 @@ namespace unit05_cycle_Team.Game.Scripting
                     message2.SetText($"Player 2 Died at {death_time2}");
                     message2.SetPosition(position2);
                     cast.AddActor("messages", message2);
+                    score2.SetText($"Score Player 2: {death_time2}");
                     // make everything white
                     foreach (Actor segment in segments2)
                     {

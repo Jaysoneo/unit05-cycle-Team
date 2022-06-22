@@ -33,20 +33,11 @@ namespace unit05_cycle_Team.Game.Scripting
             if (keyboardService.IsKeyDown("\n"))
             {
                 Console.WriteLine("Enter key pressed");
-<<<<<<< HEAD
-                foreach (Snake snake in all_snakes)
-                {
-                    cast.RemoveActor("snake", snake);
-                }
-                cast.RemoveActor("score1", score1);
-                cast.RemoveActor("score2", score2);
-=======
                 //foreach (Snake snake in all_snakes)
                 //{
                 //    cast.RemoveActor("snake", snake);
                 //}
                 //cast.RemoveActor("time", time);
->>>>>>> 15c4d11c68c1f53c83f27661e3e1fe729f06a4b1
             }
         }
 
