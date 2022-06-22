@@ -13,6 +13,7 @@ namespace unit05_cycle_Team.Game.Casting
     public class Time : Actor
     {
         private int time = 0;
+        private string name = "";
 
         /// <summary>
         /// Constructs a new instance of Score, starting at 0.
@@ -31,8 +32,17 @@ namespace unit05_cycle_Team.Game.Casting
             Snake snake = (Snake)cast.GetFirstActor("snake");
             List<Actor> body = snake.GetBody(); 
             time++;
-            SetText($"Time: {this.time}");
+            SetText($"{this.name} {this.time}");
         }
+        /// <summary>
+        /// Sets the name of the actor
+        /// </summary>
+        /// <param name="SetName">The name of the actor.</param>
+        public void SetName(string SetName)
+        {
+            this.name = SetName;
+        }
+       
         public int GetTime() 
         {
             return time;

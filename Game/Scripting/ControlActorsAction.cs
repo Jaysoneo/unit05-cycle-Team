@@ -33,8 +33,10 @@ namespace unit05_cycle_Team.Game.Scripting
                 direction2 = new Point(0, -Constants.CELL_SIZE);
                 initial = false;
             }
-            Time time = (Time)cast.GetFirstActor("time");
-            time.AddTime(cast);
+            Time score1 = (Time)cast.GetFirstActor("score1");
+            score1.AddTime(cast);
+            Time score2 = (Time)cast.GetFirstActor("score2");
+            score2.AddTime(cast);
             // left
             if (keyboardService.IsKeyDown("a"))
             {   

@@ -27,7 +27,8 @@ namespace unit05_cycle_Team.Game.Scripting
         public void Execute(Cast cast, Script script) 
         {
             List<Actor> all_snakes = cast.GetActors("snake");
-            Actor time = cast.GetFirstActor("time");
+            Actor score1 = cast.GetFirstActor("score1");
+            Actor score2 = cast.GetFirstActor("score2");
 
             if (keyboardService.IsKeyDown("KEY_ENTER"))
             {
@@ -36,7 +37,8 @@ namespace unit05_cycle_Team.Game.Scripting
                 {
                     cast.RemoveActor("snake", snake);
                 }
-                cast.RemoveActor("time", time);
+                cast.RemoveActor("score1", score1);
+                cast.RemoveActor("score2", score2);
             }
         }
 
