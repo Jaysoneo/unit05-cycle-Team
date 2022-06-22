@@ -3,7 +3,6 @@ using unit05_cycle_Team.Game.Directing;
 using unit05_cycle_Team.Game.Scripting;
 using unit05_cycle_Team.Game.Services;
 
-//Commit this
 namespace unit05_cycle_Team
 {
     /// <summary>
@@ -22,7 +21,8 @@ namespace unit05_cycle_Team
             Cast cast = new Cast();
             cast.AddActor("snake", new Snake(1));
             cast.AddActor("snake", new Snake(2));
-            cast.AddActor("time", new Time(cast));
+            cast.AddActor("score1", new Time(cast));
+            cast.AddActor("score2", new Time(cast));
 
             // create the services
             KeyboardService keyboardService= new KeyboardService();
@@ -68,5 +68,3 @@ namespace unit05_cycle_Team
         
     }
 }
-//Test comment
-//haha yes

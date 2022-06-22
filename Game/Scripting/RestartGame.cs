@@ -1,4 +1,4 @@
-// This class could start the game by hitting enter, then Exit the game by hitting enter again.
+// This class could start the game by hitting enter, then restart the game by hitting enter again.
 using System;
 using System.Collections.Generic;
 using unit05_cycle_Team.Game.Directing;
@@ -11,7 +11,7 @@ namespace unit05_cycle_Team.Game.Scripting
     
     /// <summary>
     /// <para>
-    /// The responsibility of ExitGame is to Exit  
+    /// The responsibility of RestartGame is to restart  
     /// the game when the user presses the enter key.
     /// </para>
     /// </summary>
@@ -31,7 +31,6 @@ namespace unit05_cycle_Team.Game.Scripting
         {
             if (keyboardService.IsKeyDown("\n"))
             {
-                var args = new string[] {"arg1","arg2","arg3"};
                 Console.WriteLine("Enter key pressed");
                 videoService.CloseWindow();
             }

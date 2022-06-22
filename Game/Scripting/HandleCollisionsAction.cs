@@ -80,9 +80,13 @@ namespace unit05_cycle_Team.Game.Scripting
 
         private void HandleGameOver(Cast cast)
         {
-            Time time = (Time)cast.GetFirstActor("time");
-            if (OneIsAlive) {death_time1 = time.GetTime();}
-            if (TwoIsAlive) {death_time2 = time.GetTime();}
+            Time score1 = (Time)cast.GetFirstActor("score1");
+            score1.SetName("Score Player 1:");
+
+            Time score2 = (Time)cast.GetFirstActor("score2");
+            score2.SetName("Score Player 2: ");
+            if (OneIsAlive) {death_time1 = score1.GetTime();}
+            if (TwoIsAlive) {death_time2 = score2.GetTime();}
             if (isGameOver == true)
             {
                 Snake snake1 = (Snake)cast.GetFirstActor("snake");
@@ -93,7 +97,7 @@ namespace unit05_cycle_Team.Game.Scripting
                 if (!OneIsAlive)
                 {
                     // create a "game over" message
-                    int x = Constants.MAX_X / 2;
+                    int x = Constants.MAX_X / 2-5*15;
                     int y = (Constants.MAX_Y / 2)-20;
                     Point position1 = new Point(x, y);
 
@@ -111,7 +115,7 @@ namespace unit05_cycle_Team.Game.Scripting
                 }
                 if (TwoIsAlive == false) {
                     // create a "game over" message
-                    int x = Constants.MAX_X / 2;
+                    int x = Constants.MAX_X / 2-5*15;
                     int y = (Constants.MAX_Y / 2)+20;
                     Point position2 = new Point(x, y);
                     Actor message2 = new Actor();
