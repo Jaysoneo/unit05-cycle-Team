@@ -127,7 +127,7 @@ namespace unit05_cycle_Team.Game.Casting
                 segments.Add(segment);
             }
             else if (player == 2) {
-                Point position = new Point(50 * Constants.CELL_SIZE, y);
+                Point position = new Point(65 * Constants.CELL_SIZE, y);
                 Point velocity = new Point(-Constants.CELL_SIZE, Constants.CELL_SIZE);
                 string text = "8";
                 Color color = Constants.RED;
