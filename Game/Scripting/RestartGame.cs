@@ -31,7 +31,10 @@ namespace unit05_cycle_Team.Game.Scripting
         {
             if (keyboardService.IsKeyDown("\n"))
             {
+<<<<<<< HEAD
                 Console.WriteLine("Enter key pressed");
+=======
+>>>>>>> 80b44c8334d74b96ca8a57585a3daa297b82c1dc
                 videoService.CloseWindow();
             }
         }
