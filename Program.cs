@@ -27,12 +27,11 @@ namespace unit05_cycle_Team
             // create the services
             KeyboardService keyboardService= new KeyboardService();
             VideoService videoService = new VideoService(false);
-            ExitGame startGame = new ExitGame(keyboardService, videoService);
+            
            
             // create the script
             Script script = new Script();
             script.AddAction("input", new ControlActorsAction(keyboardService));
-            script.AddAction("input", new ExitGame(keyboardService, videoService));
             script.AddAction("update", new MoveActorsAction());
             script.AddAction("update", new HandleCollisionsAction());
             script.AddAction("output", new DrawActorsAction(videoService));
@@ -52,11 +51,11 @@ namespace unit05_cycle_Team
             // create the services
             KeyboardService keyboardService= new KeyboardService();
             VideoService videoService = new VideoService(false);
-            ExitGame startGame = new ExitGame(keyboardService, videoService);
+            
             // create the script
             Script script = new Script();
             script.AddAction("input", new ControlActorsAction(keyboardService));
-            script.AddAction("input", new ExitGame(keyboardService, videoService));
+            
             script.AddAction("update", new MoveActorsAction());
             script.AddAction("update", new HandleCollisionsAction());
             script.AddAction("output", new DrawActorsAction(videoService));
